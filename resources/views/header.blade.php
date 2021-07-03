@@ -1,9 +1,11 @@
 <section class="header">
     <div class="row">
         <div class="col-sm-12 header_top">
-            <a href="#">Login</a>
-            <a href="#">logout</a>
-            <a href="#">cart</a>
+            <div class="user_con">
+                <a href="#">Login</a>
+                <a href="#">logout</a>
+                <a href="#">cart</a>
+            </div>
         </div>
         <div class="col-sm-12 header_bottom d-flex">
             <div class="col-md-6">
@@ -22,3 +24,6 @@
     </div>
 
 </section>
+<div class="kk">
+
+</div>
