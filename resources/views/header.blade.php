@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-sm-12 header_top">
             <div class="user_con">
-                <a href="#">Login</a>
-                <a href="#">logout</a>
+                <a href={{url('login')}}>Login</a>
+                <a href="{{url('signup')}}">signup</a>
                 <a href="#">cart</a>
             </div>
         </div>
@@ -24,6 +24,3 @@
     </div>
 
 </section>
-<div class="kk">
-
-</div>
