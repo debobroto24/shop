@@ -10,7 +10,7 @@
         <div class="col-sm-12 header_bottom d-flex">
             <div class="col-md-6">
                 <div class="logo">
-                    <h3>OurShop</h3>
+                    <h3><a href="{{url('home')}}">OurShop</a> </h3>
                 </div>
             </div>
             <div class="col-md-6">

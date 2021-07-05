@@ -18,8 +18,14 @@ use App\Http\Controllers\User;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get("home", [Product::class, "product"]);
+
 Route::post("signup", [User::class, "signup"]);
 Route::view("signup", "signup");
 Route::view("login", "login"); // for calling view in link
 Route::post("login", [User::class, "login"]); // for go to funtion in class
+
+//  detail collection 
+Route::get("detail/{id}", [Product::class, "detail"]); // for go to funtion in class
+
+// product controller 
+Route::get("home", [Product::class, "product"]);

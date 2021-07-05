@@ -15,6 +15,7 @@
     @yield("product")
     @yield("signup");
     @yield("login");
+    @yield("detail");
 
 </body>
 
