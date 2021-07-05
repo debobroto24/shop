@@ -13,7 +13,8 @@
 <body>
     {{View::make("header")}}
     @yield("product")
-
+    @yield("signup");
+    @yield("login");
 
 </body>
 

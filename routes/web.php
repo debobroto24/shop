@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Product;
+use App\Http\Controllers\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get("home", [Product::class, "product"]);
+Route::post("signup", [User::class, "signup"]);
+Route::view("signup", "signup");
+Route::view("login", "login"); // for calling view in link
+Route::post("login", [User::class, "login"]); // for go to funtion in class
