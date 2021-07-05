@@ -1,9 +1,11 @@
-*{
-    margin:0;padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none !important;
 }
-.msg{
+
+.msg {
     text-align: center;
     background: #ec2511;
     color: white;
@@ -12,39 +14,44 @@
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 5px;
-    font-size:18px;
+    font-size: 18px;
 }
-.header{
+
+.header {
     width: 100%;
     height: 100px;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 76% 75%, 38% 83%, 0 100%);
-      background: #2bb4ddfb;
-}
-.header_top .user_con{
-    text-align:right;
- 
-    width: 100%;
-    height: 25px;
-    
+    background: #2bb4ddfb;
 }
 
-.header_top .user_con a{
-    padding:3px 8px;
+.header_top .user_con {
+    text-align: right;
+
+    width: 100%;
+    height: 25px;
+
+}
+
+.header_top .user_con a {
+    padding: 3px 8px;
     color: white;
 }
-.header_bottom .nav{
+
+.header_bottom .nav {
     display: flex;
     justify-content: center;
 }
-.header_bottom .nav a{
+
+.header_bottom .nav a {
     /* color: #948484; */
-    color:black;
+    color: black;
     font-size: 1.3em;
     padding: 2px 8px;
     position: relative;
 }
-.header_bottom .nav a::after{
-    content:"";
+
+.header_bottom .nav a::after {
+    content: "";
     width: 0px;
     height: 0px;
     background: red;
@@ -52,135 +59,147 @@
     left: 0;
     top: 0;
     bottom: 0;
-    opacity:0.5;
+    opacity: 0.5;
 }
+
 /* -------------------------------product ------------- */
 
 
 
-.product_container{
-    width:100%;
+.product_container {
+    width: 100%;
 
 }
-.product_wrapper{
+
+.product_wrapper {
     display: grid;
-    grid-template-columns:auto auto auto auto auto;
-    grid-column-gap:50px;
-    grid-row-gap:40px;
-    
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+
 }
-.product{
-    border:1px solid red;
-    height:200px;
+
+.product {
+    border: 1px solid red;
+    height: 200px;
 }
 
 /* ---------------------------------- 
     login
     ------------------------------------
-
 */
 .login,
-.signup{
-    width:100%;
-    height:100vh;
-   position: relative;
-   box-sizing:border-box;
-  
+.signup {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+
 }
 
-.login_wrapper ,
-.signup_wrapper{ 
- padding:20px;
+.login_wrapper,
+.signup_wrapper {
+    padding: 20px;
     border-radius: 10px;
-        /* border: 2px solid red; */
+    /* border: 2px solid red; */
     width: 300px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-background:rgb(25, 184, 212);
+    transform: translate(-50%, -50%);
+    background: rgb(25, 184, 212);
 }
-.login .login_header ,
-.signup .signup_header{
-    text-align:center;
-    margin:20px 0px;
+
+.login .login_header,
+.signup .signup_header {
+    text-align: center;
+    margin: 20px 0px;
 }
+
 .login .txt_field,
-.signup .txt_field{
-    width:100%;
-    border-bottom:1px solid #fff;
-    margin:40px 0px;
+.signup .txt_field {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin: 40px 0px;
     /* overflow: hidden; */
     position: relative;
 }
+
 .login .txt_field input,
-.signup .txt_field input{
-    width:100%;
-    border:none;
-    outline:none;
-    height:25px;
-    background:none;
-   color:#fff;
-   font-size:1.1em;
+.signup .txt_field input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 25px;
+    background: none;
+    color: #fff;
+    font-size: 1.1em;
 }
+
 .login .txt_field label,
-.signup .txt_field label{
+.signup .txt_field label {
     position: absolute;
-    top:50%;
-    left:0;
+    top: 50%;
+    left: 0;
     transform: translateY(-50%);
-    font-size:20px;
-     transition: .4s ease;
-     color:rgba(255, 255, 255, 0.89);
+    font-size: 20px;
+    transition: .4s ease;
+    color: rgba(255, 255, 255, 0.89);
 }
-.login .txt_field input:focus ~ label ,
-.login .txt_field input:valid ~ label,
-.login .txt_field input:hover ~ label,
-.signup .txt_field input:focus ~ label ,
-.signup .txt_field input:valid ~ label,
-.signup .txt_field input:hover ~ label{
-     top:-10px; 
+
+.login .txt_field input:focus~label,
+.login .txt_field input:valid~label,
+.login .txt_field input:hover~label,
+.signup .txt_field input:focus~label,
+.signup .txt_field input:valid~label,
+.signup .txt_field input:hover~label {
+    top: -10px;
 }
+
 .login .txt_field label:hover,
-.signup .txt_field label:hover{
-     top:-10px; 
+.signup .txt_field label:hover {
+    top: -10px;
 }
 
 
 .login .login_wrapper input[type="submit"],
-.signup .signup_wrapper input[type="submit"]{
-    width:100%;
-    border:none;
-   outline:none;
-   padding:3px 0px;
-   border-radius:60px;
-   font-size:1.3em;
-   color:black;
-   box-sizing: border-box;
-   border:1.5px solid #fff;
-   transition:.2s ease-in-out;
-   
+.signup .signup_wrapper input[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 3px 0px;
+    border-radius: 60px;
+    font-size: 1.3em;
+    color: black;
+    box-sizing: border-box;
+    border: 1.5px solid #fff;
+    transition: .2s ease-in-out;
+
 }
+
 .login .login_wrapper input[type="submit"]:hover,
-.singup .signup_wrapper input[type="submit"]:hover{
-    border:1.5px solid rgba(25, 184, 212, 0.562);
-    
+.singup .signup_wrapper input[type="submit"]:hover {
+    border: 1.5px solid rgba(25, 184, 212, 0.562);
+
 }
-.login .forgotpass ,
-.signup .forgotpass{
+
+.login .forgotpass,
+.signup .forgotpass {
     text-align: center;
-display: block;
-margin: 15px 0px;
-color:#0404b7;
-font-size: 1.1em;
+    display: block;
+    margin: 15px 0px;
+    color: #0404b7;
+    font-size: 1.1em;
 }
-.login .forgotpass a{
+
+.login .forgotpass a {
     text-decoration: none;
 }
-.login .signup_btn{
-   text-align:center;
-   font-size:1.1em;
-   color:#fff;
+
+.login .signup_btn {
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
 }
 
 /* ---------------------------------- 
