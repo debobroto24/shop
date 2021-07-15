@@ -21,6 +21,9 @@
                 <div class="detail_details">
                     <span>About {{$product->name}} : {{$product->detail}}</span>
                 </div>
+                <div class="addToCart">
+                    <a href="{{url('addtocart/'.$product->id)}}"><button class="btn btn-primary">Add To Cart</button></a>
+                </div>
             </div>
         </div>
     </div>

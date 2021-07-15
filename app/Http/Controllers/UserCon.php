@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 
-class User extends Controller
+class UserCon extends Controller
 {
     //
     function signup(Request $req)
@@ -34,6 +34,7 @@ class User extends Controller
             Session::flash('msg', 'Email or Password did not matched!');
             return back();
         } else {
+            session()->put('user', $data);
             return redirect("home");
         }
     }
